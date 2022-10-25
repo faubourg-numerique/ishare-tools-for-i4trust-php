@@ -10,6 +10,38 @@ It has been developped by FIWARE iHub / DIH Faubourg Numérique, in the context 
 - PHP with curl
 - Composer
 
+### Installation
+
+Add the following to your *composer.json* file
+
+```json
+{
+    "repositories": [
+        {
+            "url": "https://github.com/faubourg-numerique/ishare-tools-for-i4trust-php.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "faubourg-numerique/ishare-tools-for-i4trust-php": "^1.0"
+    }
+}
+```
+
+Download the library
+
+```
+composer require faubourg-numerique/ishare-tools-for-i4trust-php
+```
+
+Include the library in your project
+
+```php
+use FaubourgNumerique\IShareToolsForI4Trust\IShareToolsForI4Trust;
+
+require("vendor/autoload.php");
+```
+
 ## Usage
 
 ### Generate iShare JWT
