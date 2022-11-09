@@ -3,6 +3,7 @@
 namespace FaubourgNumerique\IShareToolsForI4Trust;
 
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Ramsey\Uuid\Uuid;
 
 class IShareToolsForI4Trust
@@ -92,8 +93,8 @@ class IShareToolsForI4Trust
         curl_exec($ch);
     }
 
-    static function decodeJWT(string $encodedJWT, string $privateKey)
+    static function decodeJWT(string $encodedJWT, string $certificate)
     {
-        return JWT::decode($encodedJWT, $privateKey);
+        return JWT::decode($encodedJWT, new Key($certificate, "RS256"));
     }
 }
