@@ -95,6 +95,6 @@ class IShareToolsForI4Trust
 
     static function decodeJWT(string $encodedJWT, string $certificate)
     {
-        return JWT::decode($encodedJWT, new Key($certificate, "RS256"));
+        return json_decode(json_encode(JWT::decode($encodedJWT, new Key($certificate, "RS256"))), true);
     }
 }
