@@ -31,7 +31,7 @@ Add the following to your *composer.json* file
 Download the library
 
 ```
-composer require faubourg-numerique/ishare-tools-for-i4trust-php
+composer update
 ```
 
 Include the library in your project
