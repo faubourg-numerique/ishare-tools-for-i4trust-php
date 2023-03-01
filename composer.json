@@ -1,11 +1,6 @@
 {
     "name": "faubourg-numerique/ishare-tools-for-i4trust-php",
     "type": "library",
-    "require": {
-        "firebase/php-jwt": "^6.3",
-        "paragonie/sodium_compat": "^1.19",
-        "ramsey/uuid": "^4.5"
-    },
     "autoload": {
         "psr-4": {
             "FaubourgNumerique\\IShareToolsForI4Trust\\": "src/"
@@ -16,5 +11,10 @@
             "name": "Pierre Josselin",
             "email": "contact@pierre-josselin.fr"
         }
-    ]
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.4",
+        "paragonie/sodium_compat": "^1.19",
+        "ramsey/uuid": "^4.2"
+    }
 }

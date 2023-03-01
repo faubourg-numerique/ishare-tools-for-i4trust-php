@@ -7,7 +7,7 @@ It has been developped by FIWARE iHub / DIH Faubourg Numérique, in the context 
 
 ### Prerequisites
 
-- PHP with curl
+- PHP >= 7.3 with curl
 - Composer
 
 ### Installation
