@@ -23,7 +23,7 @@ Add the following to your *composer.json* file
         }
     ],
     "require": {
-        "faubourg-numerique/ishare-tools-for-i4trust-php": "^1.0"
+        "faubourg-numerique/ishare-tools-for-i4trust-php": "^1.3.0"
     }
 }
 ```
